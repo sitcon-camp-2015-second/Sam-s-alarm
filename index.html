@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/Fuck.js"></script>
+    <script src="js/1.js"></script>
     <style type="text/css">
         #nav {
             height: 20px;
@@ -33,12 +33,12 @@
         <img class="col-xs-12" src="img/first1.gif" style="min-height:200px;"/>
     </div>
     <div class="col-md-6 col-md-offset-2 col-xs-12">
-        <button class="btn2 btn btn-primary" style="margin-left:120px">on</button>
-        <button class="btn1 btn btn-default" >off</button>
-        <div class="on">
-            <h4 class="text-primary" style="margin-left:120px">Please Set your Alarm！</h4>
 
-        <div class="col-md-10 col-xs-12 col-md-offset-2" style="margin-top:40px;">
+        
+        <button class="btn2 btn btn-primary" onclick="turn(on)">on</button>
+        <button class="btn1 btn btn-default"onclick="turn(off)">off</button>
+        <div class="on">
+            <h4 class="text-primary">Please Set your Alarm！</h4>
             <div class="col-md-2 col-xs-12"><H1>SET：</H1></div>
             <div class="col-md-3 col-xs-12"><select id="hours" class="form-control" style="min-height:60px"></select></div>
             <div class="col-md-3 col-xs-12">
@@ -52,7 +52,6 @@
     <div class="col-md-8 col-xs-12" id="Anser">
 
     </div>
-
     <script>
         $(document).ready(function(){
             $(".btn1").click(function(){

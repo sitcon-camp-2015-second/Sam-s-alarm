@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SAMS ALARM</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/2.js"></script>
     <script type="text/javascript" src="./music/music_db_javascript.js"></script>
 
     <style type="text/css">
@@ -22,11 +26,17 @@
 
 
 <body>
-    <audio src="./music/media/music1-1.mp3"  id="audio_c"></audio>
+    <audio loop autoplay id="audio_c">
+        <source src="./music/media/music1-1.mp3" type="audio/mpeg">
+    </audio>
     <script>
     //aCheck();
+    var astop=0;
     var audio = document.getElementsByTagName('audio')[0];
-    aplay();
+    //aplay();
+    
+
+    acheck();
 
     </script>
 
@@ -58,11 +68,7 @@
         </form>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/2.js"></script>
+    
 </body>
 
 </html>
