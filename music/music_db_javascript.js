@@ -20,6 +20,7 @@ function apause()		//暫停
 	audio.pause();
 }
 
+
 var loadMusic = function(i)  //讀取音樂(未完成)
 {
 	var item = playlist[i],
@@ -36,6 +37,7 @@ var loadMusic = function(i)  //讀取音樂(未完成)
 	audio.addEventListener('ended', ended, false);
 }
 
+/*
 var shufflePlay = function()	//隨機撥放(未完成)
 {
 	var time = new Date(),
@@ -44,6 +46,7 @@ var shufflePlay = function()	//隨機撥放(未完成)
 	if (lastTrack == currentTrack) ++currentTrack;
 	switchTrack(currentTrack);
 }
+*/
 
 
 
