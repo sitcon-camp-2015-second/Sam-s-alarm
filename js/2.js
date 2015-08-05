@@ -1,14 +1,12 @@
 $(document).ready(function(){
 
 	$('#submit').click(function(){
-		window.location.href = 'index.html';
+		if(document.getElementById('answer').checked){
+			window.location.href = 'index.html';
+		}
+		else {
+			$('#warn').append("<div style = 'color:red'>答錯囉，再聽一次JJ</div>");
+		}
 	});
 
-	//按起重複播放的按鍵，會重複播放
-
-	//音樂js
-
-	//顯示歌詞
-
-	//歌詞後顯示題目
 });
