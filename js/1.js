@@ -11,19 +11,15 @@ power = true;
 //開始鬧鐘
 function start_alarm() {
   time = document.querySelector("#hours").value*60 + document.querySelector("#minutes").value;
-  sleep(time*1000);
+  sleep(time);
   if (power) {
     document.location.href = "index2.html"
   }
 }
 
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
+function sleep(sec) {
+  var time = new Date().getTime();
+  while(new Date().getTime() - time < sec * 1000);
 }
 
 function turn(val) {
