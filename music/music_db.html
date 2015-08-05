@@ -15,9 +15,14 @@
 		
 	</head>
 	<body>
-		<audio src="./media/NEXT_TO_YOU.mp3" controls id="audio_c"></audio>
+		<audio src="./media/NEXT_TO_YOU.mp3"  id="audio_c"></audio>
 		<script>
 			aCheck();
+			var audio = document.getElementsByTagName('audio')[0];
+			audio.pause();
         </script>  
+        <input type="button" value="RUN" onclick="aplay();">
+        <input type="button" value="Pause" onclick="apause();">
+
 	</body>
 </html>
