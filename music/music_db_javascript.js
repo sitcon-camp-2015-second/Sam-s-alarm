@@ -19,6 +19,10 @@ function apause()		//暫停
 	var audio = document.getElementsByTagName('audio')[0];
 	audio.pause();
 }
+// function replay(){
+// 	var audio = document.getElementsByTagName('audio')[0];
+// 	audio.play()
+// }
 
 
 var loadMusic = function(i)  //讀取音樂(未完成)
