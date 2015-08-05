@@ -14,5 +14,9 @@ jQuery(document).ready(function(){
 
 	//音樂js
 
+	//顯示歌詞
+
+	
+
 
 });
