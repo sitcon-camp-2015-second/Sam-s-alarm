@@ -23,8 +23,20 @@ function apause()		//暫停
 // 	var audio = document.getElementsByTagName('audio')[0];
 // 	audio.play()
 // }
+function loadmusic(i) //讀取音樂(未完成)
+{
+	var item = playlist[i];
+	$('audio').html('<source src=""')
+}
+
+function replay()
+{
+	audio.currentTime = 0;
+}
 
 
+
+/*
 var loadMusic = function(i)  //讀取音樂(未完成)
 {
 	var item = playlist[i],
@@ -40,7 +52,7 @@ var loadMusic = function(i)  //讀取音樂(未完成)
 	audio.addEventListener('canplay', afterLoad, false);
 	audio.addEventListener('ended', ended, false);
 }
-
+*/
 /*
 var shufflePlay = function()	//隨機撥放(未完成)
 {
