@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+$(document).ready(function(){
 
 	/*設定鬧鐘頁面*/
 
@@ -6,11 +6,11 @@ jQuery(document).ready(function(){
 
   //產生選單
 for(i=0; i<24; i++) {
-  $("select[hours]").append('<option value="' + $i '">' + $i + '</select>');
+  $("#hours").append('<option value="' + i + '">' + i + '</select>');
 }
 
 for(i=0; i<60; i++) {
-  $("select[minutes]").append('<option value="' + $i '">' + $i + '</select>');
+  $("#minutes").append('<option value="' + i + '">' + i + '</select>');
 }
 
   //一個下拉bar可以設定鬧鐘
