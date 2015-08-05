@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SAMS ALARM</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-
+    <script type="text/javascript" src="./music/music_db_javascript.js"></script>
 
     <style type="text/css">
         #nav {
@@ -22,6 +22,13 @@
 
 
 <body>
+    <audio src="./music/media/music1.mp3"  id="audio_c"></audio>
+    <script>
+    //aCheck();
+    var audio = document.getElementsByTagName('audio')[0];
+    aplay();
+
+    </script>
 
     <div class="col-md-10 col-md-offset-1 col-xs-12" id="MainPic">
         <img class="col-xs-12" src="img/first1.gif" style="min-height:200px;">
