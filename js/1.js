@@ -12,7 +12,7 @@ for(i=0; i<60; i++) {
 function start_alarm() {
   time = document.querySelector("#hours").value*60 + document.querySelector("#minutes").value
   sleep(time*1000)
-  alert()
+  document.location.href = "index2.html"
 }
 
 function sleep(milliseconds) {
