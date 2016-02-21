@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SAM'S ALARM</title>
-
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/1.js"></script>
-    <style type="text/css">
-        #nav {
-            height: 20px;
-            background-color: #333;
-        }
-        body{
-
-        };
-    </style>
-
-
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>SAM'S ALARM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="keywords" content="Sam, Alarm, SITCON, camp" />
+	<meta name="description" content="Sam's Alarm" />
+	<meta property="og:title" content="SAM'S ALARM" />
+	<meta property="og:url" content="http://2015-2.sitcon.camp/Sam-s-alarm/" />
+	<meta property="og:image" content="img/first.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Sam's Alarm" />
+	<meta property="og:site_name" content="Sam's Alarm" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/1.js"></script>
 </head>
 
  <body>
-
-    <div class="col-md-10 col-md-offset-1 col-xs-12" id="MainPic">
-        <img class="col-xs-12" src="img/first1.gif" style="min-height:200px;"/>
-    </div>
-    <div class="col-md-6 col-md-offset-2 col-xs-12">
-
-        
-        <button class="btn2 btn btn-primary" onclick="turn(on)">on</button>
-        <button class="btn1 btn btn-default"onclick="turn(off)">off</button>
-        <div class="on">
-            <h4 class="text-primary">Please Set your Alarm！</h4>
-            <div class="col-md-2 col-xs-12"><H1>SET：</H1></div>
-            <div class="col-md-3 col-xs-12"><select id="hours" class="form-control" style="min-height:60px"></select></div>
-            <div class="col-md-3 col-xs-12">
-                <select id="minutes" class="form-control" style="min-height:60px"></select>
-            </div>
-           <button type="button" class="btn btn-primary btn-lg" onclick="start_alarm()">OK！</button>
-        </div>
-         </div>
-
-    </div>
-    <div class="col-md-8 col-xs-12" id="Anser">
-
-    </div>
-    <script>
-        $(document).ready(function(){
-            $(".btn1").click(function(){
-                $(".on").hide();
-            });
-            $(".btn2").click(function(){
-                $(".on").show();
-            });
-        });
-    </script>
-
-
+	<div class="col-md-10 col-md-offset-1 col-xs-12" id="MainPic">
+		<img class="col-xs-12" src="img/first.png" style="min-height:200px;"/>
+	</div>
+	<div class="col-md-6 col-md-offset-2 col-xs-12">
+		<button class="btn2 btn btn-primary" onclick="$('.on').show(); power = true;">on</button>
+		<button class="btn1 btn btn-default" onclick="$('.on').hide(); power = false;">off</button>
+		<div class="on">
+			<h4 class="text-primary">Please Set your Alarm!</h4>
+			<div class="col-md-2 col-xs-12">
+				<h1>SET: </h1>
+			</div>
+			<div class="col-md-3 col-xs-12">
+				<select id="hours" class="form-control" style="min-height: 60px;"></select>
+			</div>
+			<div class="col-md-3 col-xs-12">
+				<select id="minutes" class="form-control" style="min-height: 60px;"></select>
+			</div>
+		   <button type="button" class="btn btn-primary btn-lg" onclick="start_alarm();">OK!</button>
+		</div>
+		</div>
+	</div>
 </body>
-
 </html>
